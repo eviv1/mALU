@@ -1,0 +1,15 @@
+module mCarryFlag (
+    input iD,          // Input data (carry flag)
+    input iClock,      // Clock signal
+    input iReset,      // Reset signal
+    output reg oQ      // Output (stored carry flag)
+);
+    // Always block triggered on the rising edge of the clock or when reset is active
+    always @(posedge iClock or posedge iReset) begin
+        if (iReset) begin
+            oQ <= 1'b0; // Reset the output to 0
+        end else begin
+            oQ <= iD;   // Store the input carry flag
+        end
+    end
+endmodule

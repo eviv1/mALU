@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\PROJS\ALU COMPILED\simulation\qsim
+vArithmetic_LU
+Z1 I:nHOO4mgnYBJnZE:]V9Oz1
+Z2 VG2O]ZcBa?]d>@4NP6=zDO3
+Z3 dC:\altera\13.0sp1\PROJS\ALU COMPILED\simulation\qsim
+Z4 w1733452870
+Z5 8Arithmetic_LU.vo
+Z6 FArithmetic_LU.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Arithmetic_LU.vo|
+Z9 o-work work -O0
+Z10 n@arithmetic_@l@u
+!i10b 1
+Z11 !s100 Z`DX:b7;lFecU5jcz??963
+!s85 0
+Z12 !s108 1733452871.976000
+Z13 !s107 Arithmetic_LU.vo|
+!s101 -O0
+vArithmetic_LU_vlg_check_tst
+!i10b 1
+Z14 !s100 Nm;L3UGccn5G?G6?f?T?d2
+Z15 I4`UYdch7[hz^k]EN8=k?91
+Z16 V=;JGTfm9]a5kWHXXLf^Qb1
+R3
+Z17 w1733452868
+Z18 8Arithmetic_LU.vt
+Z19 FArithmetic_LU.vt
+L0 69
+R7
+r1
+!s85 0
+31
+Z20 !s108 1733452872.164000
+Z21 !s107 Arithmetic_LU.vt|
+Z22 !s90 -work|work|Arithmetic_LU.vt|
+!s101 -O0
+R9
+Z23 n@arithmetic_@l@u_vlg_check_tst
+vArithmetic_LU_vlg_sample_tst
+!i10b 1
+Z24 !s100 S>kQ33I]>7Vc2o6G_mRV33
+Z25 IPL17VLj>798GdLQmN9QgM0
+Z26 VBzQ?2=TKOBJ?Smg=?]R]Z2
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@arithmetic_@l@u_vlg_sample_tst
+vArithmetic_LU_vlg_vec_tst
+!i10b 1
+!s100 o>^FnNbk5h6_YaH<hGcdD3
+ISH9XDbBHnoB<J0e1a`fNI0
+Z28 V4N`i=Ufk[_BSozl[o6_eU2
+R3
+R17
+R18
+R19
+Z29 L0 1559
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z30 n@arithmetic_@l@u_vlg_vec_tst
