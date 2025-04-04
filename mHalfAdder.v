@@ -1,0 +1,11 @@
+module mHalfAdder(
+	input iA,
+	input iB, 
+	output oSum, 
+	output oCarry
+	);
+
+assign oCarry = iA & iB;
+assign oSum = iA ^ iB;
+
+endmodule

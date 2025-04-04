@@ -1,0 +1,80 @@
+module m8BitAdditionOnly( 
+    input [7:0] iA,     // 8-bit Addend
+    input [7:0] iB,     // 8-bit Addend
+//    input iC,           // Carry In for the first bit (external carry input)
+    output [7:0] oSum,  // 8-bit Sum output
+    output oCarry,      // Final Carry Out
+    output CarryFlag     // Carry Flag: True if carry-in is 1
+);
+
+    wire [7:0] carry;  // Internal carry wires between the stages
+ 
+    // Full adders for each bit
+    mFullAdder FullAdder_0 (
+        .iA(iA[0]), 
+        .iB(iB[0]), 
+//        .iC(iC),      // Carry in for the first bit (can be 0 or external)
+        .oSum(oSum[0]), 
+        .oCarry(carry[0])
+    );
+
+    mFullAdder FullAdder_1 (
+        .iA(iA[1]), 
+        .iB(iB[1]), 
+        //.iC(carry[0]),  // Carry from previous stage
+        .oSum(oSum[1]), 
+        .oCarry(carry[1])
+    );
+
+    mFullAdder FullAdder_2 (
+        .iA(iA[2]), 
+        .iB(iB[2]), 
+        //.iC(carry[1]),  // Carry from previous stage
+        .oSum(oSum[2]), 
+        .oCarry(carry[2])
+    );
+
+    mFullAdder FullAdder_3 (
+        .iA(iA[3]), 
+        .iB(iB[3]), 
+        //.iC(carry[2]),  // Carry from previous stage
+        .oSum(oSum[3]), 
+        .oCarry(carry[3])  // Final carry output
+    );
+
+    mFullAdder FullAdder_4 (
+        .iA(iA[4]), 
+        .iB(iB[4]), 
+        //.iC(carry[3]),  // Carry from previous stage
+        .oSum(oSum[4]), 
+        .oCarry(carry[4])
+    );
+
+    mFullAdder FullAdder_5 (
+        .iA(iA[5]), 
+        .iB(iB[5]), 
+        //.iC(carry[4]),  // Carry from previous stage
+        .oSum(oSum[5]), 
+        .oCarry(carry[5])
+    );
+
+    mFullAdder FullAdder_6 (
+        .iA(iA[6]), 
+        .iB(iB[6]), 
+        //.iC(carry[5]),  // Carry from previous stage
+        .oSum(oSum[6]), 
+        .oCarry(carry[6])
+    );
+
+    mFullAdder FullAdder_7 (
+        .iA(iA[7]), 
+        .iB(iB[7]), 
+        //.iC(),  // Carry from previous stage
+        .oSum(oSum[7]), 
+        .oCarry(oCarry)
+    );
+    
+    // Carry Flag: Set if carry-in is 1
+    assign CarryFlag = oCarry;  // Carry Flag is simply the carry-in value
+
+endmodule

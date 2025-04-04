@@ -1,0 +1,71 @@
+module m8BitAddition (input [7:0]iA,
+					  input [7:0]iB,
+					  input iC,
+					  output [7:0]oSum,
+					  oCarry);
+					  
+wire s1,s2,s3,s4,s5,s6,s7;
+
+mFullAdder Full_Add_1(
+	.iA(iA[0]),
+	.iB(iB[0]),
+	.iC(iC),
+	.oSum(oSum[0]),
+	.oCarry(s1)
+);
+
+mFullAdder Full_Add_2(
+	.iA(iA[1]),
+	.iB(iB[1]),
+	.iC(s1),
+	.oSum(oSum[1]),
+	.oCarry(s2)
+);
+
+mFullAdder Full_Add_3(
+	.iA(iA[2]),
+	.iB(iB[2]),
+	.iC(s2),
+	.oSum(oSum[2]),
+	.oCarry(s3)
+);
+mFullAdder Full_Add_4(
+	.iA(iA[3]),
+	.iB(iB[3]),
+	.iC(s3),
+	.oSum(oSum[3]),
+	.oCarry(s4)
+);
+
+mFullAdder Full_Add_5(.iA(iA[4]),
+	.iB(iB[4]),
+	.iC(s4),
+	.oSum(oSum[4]),
+	.oCarry(s5)
+);
+
+mFullAdder Full_Add_6(
+	.iA(iA[5]),
+	.iB(iB[5]),
+	.iC(s5),
+	.oSum(oSum[5]),
+	.oCarry(s6)
+);
+
+mFullAdder Full_Add_7(
+	.iA(iA[6]),
+	.iB(iB[6]),
+	.iC(s6),
+	.oSum(oSum[6]),
+	.oCarry(s7)
+	);
+	
+mFullAdder Full_Add_8(
+	.iA(iA[7]),
+	.iB(iB[7]),
+	.iC(s7),
+	.oSum(oSum[7]),
+	.oCarry(oCarry)
+	);
+
+endmodule

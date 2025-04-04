@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'iOpCode[0]'
+Slack : -1.693
+TNS   : -2.954
+
+Type  : Slow 1200mV 85C Model Setup 'iClk'
+Slack : -1.395
+TNS   : -1.469
+
+Type  : Slow 1200mV 85C Model Hold 'iOpCode[0]'
+Slack : -0.074
+TNS   : -0.074
+
+Type  : Slow 1200mV 85C Model Hold 'iClk'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iClk'
+Slack : -3.000
+TNS   : -36.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'iOpCode[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'iOpCode[0]'
+Slack : -1.442
+TNS   : -1.704
+
+Type  : Slow 1200mV 0C Model Setup 'iClk'
+Slack : -1.123
+TNS   : -1.123
+
+Type  : Slow 1200mV 0C Model Hold 'iOpCode[0]'
+Slack : -0.056
+TNS   : -0.056
+
+Type  : Slow 1200mV 0C Model Hold 'iClk'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iClk'
+Slack : -3.000
+TNS   : -36.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'iOpCode[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'iClk'
+Slack : -0.686
+TNS   : -0.686
+
+Type  : Fast 1200mV 0C Model Setup 'iOpCode[0]'
+Slack : -0.500
+TNS   : -0.500
+
+Type  : Fast 1200mV 0C Model Hold 'iOpCode[0]'
+Slack : -0.055
+TNS   : -0.055
+
+Type  : Fast 1200mV 0C Model Hold 'iClk'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iClk'
+Slack : -3.000
+TNS   : -36.808
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'iOpCode[0]'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------
