@@ -1,4 +1,7 @@
 # Arithmetic Logic Unit (ALU)
+- Compiled by Khatelyn Deang, Evitha Viola
+- Modules by Christian Cuaresma, Khatelyn Deang, Gwen Loreno, Jenielyn Policarpio, Jeff Sioco, Evitha Viola, Rafael Young
+
 This is a compilation of all modules for a basic Arithmetic Logic Unit (ALU) module.
 
 ## Operations
